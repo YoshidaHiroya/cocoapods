@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func showHUD(){
+        SVProgressHUD.show()
+    }
+    @IBAction func dismissHUD(){
+        SVProgressHUD.dismiss()
+    }
 }
 
